@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieFinder</title>
+    <script defer src="movies.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Winc Film Finder</h2>
+    </header>
+
+    <nav>
+      <input type="search" id="search" placeholder="Search movie" />
+
+      <input
+        type="radio"
+        name="film-filter"
+        id="movie-filter-new"
+        value="recent-movies"
+      />
+      <label>Latest movies, 2014 or newer</label>
+      <input
+        type="radio"
+        name="film-filter"
+        id="movie-filter-avenger"
+        value="avenger-movies"
+      />
+      <label>Avenger movies</label>
+      <input
+        type="radio"
+        name="film-filter"
+        id="movie-filter-xmen"
+        value="x-men-movies"
+      />
+      <label>X-Men movies</label>
+      <input
+        type="radio"
+        name="film-filter"
+        id="movie-filter-princess"
+        value="princess-movies"
+      />
+      <label>Princess movies</label>
+      <input
+        type="radio"
+        name="film-filter"
+        id="movie-filter-batman"
+        value="batman-movies"
+      />
+      <label>Batman movies</label>
+    </nav>
+    <main>
+      <ul id="movie_list">
+        <li></li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
